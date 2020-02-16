@@ -1,0 +1,29 @@
+#btn {
+  width: 7%; 
+  margin-left: 40%;
+  margin-right: 5%
+ }
+
+#btn1 {
+   width: 7%
+ }
+  
+ label {
+    text-align: left;
+    float: left;
+    width: 200px;
+    margin-left: 20%;
+}
+
+.center {
+  width: 60%;
+  border: 3px solid rgb(2, 3, 0);
+  margin: auto;
+  padding: 70px 0;
+}
+
+.box {
+    position: relative;
+    left: 20%;
+}
+

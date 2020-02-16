@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new event</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/form.js"></script>
+</head>
+<body>
+    <form>
+        <div class="center">
+            <label>Event Type: </label> 
+            <select id = "eventType" required>      
+                <option value= "none" selected hidden>Choose one</option>
+                <option value = "meeting">Meeting</option>
+                <option value = "assembly">Assembly</option>
+                <option value = "discussion">Discussion</option>
+                <option value = "seminar">Seminar</option>
+            </select>
+            <br><br>
+            <label>Event Title: </label> 
+            <input type = "text" id="eventTitle" required>
+            <br><br>
+            <label>Event Dates: </label>
+            <input type = "date" id = "fromDate" required> to <input type ="date" id = "toDate"required>
+            <br><br>
+            <label>Posting Dates: </label>
+            <input type = "date" id = "postDate"required><br><br><br>
+            <div class = "box">
+            <input type = "checkbox" class = "chkbx">Is Registration Required?<br><br>
+            <input type = "checkbox" class = "chkbx">Is this event associated with any Family Programs?<br><br>
+            <input type = "checkbox" class = "chkbx">Upon Registration Completion, Are Users to Receive an Auto Generated Email?<br><br>
+            <input type = "checkbox" class = "chkbx">Is There a Point of Contract?<br><br>
+            <input type = "checkbox" class = "chkbx">Is There a Hosting Command Point of Contact?<br><br><br>
+            </div>   
+            <input type = "submit" id="btn" value = "Save" onclick = "save()">
+            <input type = "reset" id="btn1"value = "Cancel" onclick="cancel()">    
+    </form>
+</body>
+</html>
